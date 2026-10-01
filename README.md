@@ -6,10 +6,11 @@
 
 # ZK-ColdChain: Private Compliance Proofs with Parametric Payouts
 
-[![Play the fifteen-second tour of what this proves and why the temperature log stays private](assets/brag-poster.jpg)](https://github.com/harsh-chandak/zk-coldchain/blob/main/assets/brag.mp4)
+[![Fifteen seconds on what this proves and why the temperature log stays private](assets/brag.gif)](https://github.com/harsh-chandak/zk-coldchain/blob/main/assets/brag.mp4)
 
-<sub>▶ Fifteen seconds on what this proves, and why the log stays private.
-GitHub strips `<video>` from READMEs, so the poster above links to the player.</sub>
+<sub>Plays above. GitHub strips `<video>` from READMEs, so this is the silent
+loop; [the full video](https://github.com/harsh-chandak/zk-coldchain/blob/main/assets/brag.mp4)
+has sound.</sub>
 
 A refrigerated shipment either stayed cold or it did not, and the insurer needs
 to know which. Handing over the temperature log answers that, and also tells the

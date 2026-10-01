@@ -1,0 +1,5 @@
+# Linguist counts bytes, and one notebook outweighs every circuit and contract
+# in the repository. The language badge read "Jupyter Notebook" for a project
+# whose actual work is Circom and Solidity.
+*.ipynb linguist-documentation
+circuits/*.circom linguist-language=Circom

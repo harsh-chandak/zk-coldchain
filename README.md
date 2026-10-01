@@ -1,17 +1,26 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-light.png">
+  <img src="assets/card-light.png" alt="ZK-ColdChain. Proves a refrigerated shipment broke its temperature limit without revealing the temperature log, then pays out on the proof. An 8 degree Celsius breach proven privately, a Groth16 on-chain verifier, and no manual claims review. Built with Circom, Solidity, snarkjs and Merkle logs.">
+</picture>
+
 # ZK-ColdChain: Private Compliance Proofs with Parametric Payouts
 
-**Course:** CSE 540 - Engineering Blockchain Applications (Fall 2025)
+A refrigerated shipment either stayed cold or it did not, and the insurer needs
+to know which. Handing over the temperature log answers that, and also tells the
+insurer the route, the dwell times and how the shipper runs their operation.
 
-**Team:** Group 24
+ZK-ColdChain proves the breach without the log. A Circom circuit takes the
+private readings and outputs one bit, breach or no breach, plus a commitment to
+the data it read. `Insurance.sol` pays out on a valid proof of that bit. The
+readings never leave the client.
 
-**University:** Arizona State University
+The payout is parametric, so there is no claim to file and nothing to dispute:
+the proof that triggers the payment is the same proof that establishes the
+breach.
 
----
-
-## ❄️ Project Abstract
-**Proof-of-Cold** is a decentralized supply chain application that automates insurance payouts for perishable goods without revealing sensitive shipping data. It utilizes **Zero-Knowledge Proofs (ZKPs)** to cryptographically prove that a shipment violated temperature constraints (e.g., exceeding 8°C) while keeping the raw temperature logs private.
-
-By combining Ethereum Smart Contracts with Circom circuits, this system eliminates manual dispute resolution. [cite_start]If a breach is proven, the smart contract automatically triggers a parametric payout to the buyer, ensuring trustless and instant settlement [cite: 62-63].
+**Course:** CSE 540, Engineering Blockchain Applications (Fall 2025) ·
+**Team:** Group 24 · **University:** Arizona State University
 
 ---
 
